@@ -1,0 +1,8 @@
+# Load stock price data from Excel file
+prices_raw = pd.read_excel(
+    io="TechnicalAssignmentALL(copy).xlsx",  # our Excel file
+    sheet_name="ALL",  # Sheet in Excel file
+    skiprows=7,  # Skip first 7 rows in sheet
+)
+
+prices_raw
